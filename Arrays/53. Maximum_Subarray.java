@@ -1,3 +1,8 @@
+// Approach 1
+// brute force - two loops - O(n)
+
+// Approach - 2
+// Kadane's Algorithm - O(1)
 class Solution {
     public int maxSubArray(int[] nums) {
         int curr = 0;
