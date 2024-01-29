@@ -1,3 +1,19 @@
+// Approach 1
+// Convert the strings to char Arrays & sort them
+/*      char[] sChars = s.toCharArray();
+        char[] tChars = t.toCharArray();
+        
+        Arrays.sort(sChars);
+        Arrays.sort(tChars);
+
+        return Arrays.equals(sChars, tChars);
+*/
+
+// Approach 2
+// Ascii value of character - 'a'
+// a - a = 0 index
+// k - a = 10 index
+// total array index 26
 class Solution {
     public boolean isAnagram(String s, String t) {
         int[] count = new int[26];
