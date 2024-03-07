@@ -28,3 +28,6 @@ class Solution {
         return true;
     }
 }
+
+// Approach 3
+// Hash Table
