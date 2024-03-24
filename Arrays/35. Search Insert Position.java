@@ -1,5 +1,17 @@
 // Approach 1
 // Linear Search
+public int searchInsert(int[] nums, int target) {
+    int i=0;
+    for(;i<nums.length;i++){
+        if(nums[i]==target){
+            return i;
+        }
+        if(nums[i]>=target){
+            break;
+        }
+    }
+    return i;
+}
 
 // Time : O(n)
 // Space : O(1)
