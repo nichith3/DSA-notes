@@ -2,7 +2,18 @@
 
 // Appraoch 1
 // Linear Search
-
+public int searchInsert(int[] nums, int target) {
+    int i=0;
+    for(;i<nums.length;i++){
+        if(nums[i]==target){
+            return i;
+        }
+        if(nums[i]>=target){
+            break;
+        }
+    }
+    return i;
+}
 
 // Approch 2
 // Binary Search - Lower Bound
