@@ -1,13 +1,13 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
+// Approch 1
+// Using Stacks - LIFO
+// Only Values are changed not Nodes
+// Time : O(n)
+// Space : O(n)
+
+
+// Approch 2
+// three pointers
+
 class Solution {
     public ListNode reverseList(ListNode head) {
         if(head == null || head.next == null){
@@ -32,3 +32,5 @@ class Solution {
 
     }
 }
+// Time : O(n)
+// Space : O(1)
