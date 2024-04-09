@@ -1,14 +1,6 @@
-/**
- * Definition for singly-linked list.
- * class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;
- *     }
- * }
- */
+
+// Approch 1
+// Fast and Slow pointer
 public class Solution {
     public boolean hasCycle(ListNode head) {
         ListNode fast = head;
@@ -25,3 +17,9 @@ public class Solution {
         return false;
     }
 }
+// Time : O(n)
+// Space : O(1)
+
+
+// Approch 2
+// Hashset
