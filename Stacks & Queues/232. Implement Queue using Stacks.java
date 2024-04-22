@@ -1,5 +1,6 @@
 // Use two stacks
 
+// Approach 1
 class MyQueue {
 
         Stack<Integer> first = new Stack<>();
@@ -40,3 +41,31 @@ class MyQueue {
         return first.empty();
     }
 }
+// Time : O(N)
+// Space : O(2N)
+
+
+// Approach 2
+// Input and Output Stack
+
+// Push operation
+// Push to stack input
+
+// Pop
+// if (output not empty) {
+//         output.pop
+// } else {
+//         input --> output
+//         output.pop
+// }
+
+// top
+// if (output not empty) {
+//         output.top
+// } else {
+//         input --> output
+//         output.top
+// }
+
+// Time : O(N) but O(1) amortised because only in certain cases it is O(N)
+// Space : O(2N)
