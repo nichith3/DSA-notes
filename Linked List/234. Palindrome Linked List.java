@@ -1,13 +1,44 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
+// Approach 1
+// Using Stacks
+
+/** class Solution {
+    public boolean isPalindrome(ListNode head) {
+        Stack<Integer> s1 = new Stack<>();
+        if(head == null){
+            return false;
+        }
+        if(head.next == null){
+            return true;
+        }
+        ListNode temp = head;
+        while(temp!=null){
+            s1.push(temp.val);
+            temp = temp.next;
+        }
+
+        temp = head;
+        while(temp!=null){
+            if(temp.val != s1.peek()){
+                return false;
+            }
+            temp = temp.next;
+            s1.pop();
+        }
+
+        return true;
+    }
+}
+**/
+
+// time : O(2N)
+// Space : O(N)
+
+
+// Approach 2
+// find middle
+// reverse from middle & make it second head
+// compare the first head & second head
+
 class Solution {
     public boolean isPalindrome(ListNode head) {
         ListNode mid = middle(head);
@@ -62,3 +93,6 @@ class Solution {
 
     }
 }
+
+// Time : O(N)
+// Space : O(1)
