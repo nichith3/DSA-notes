@@ -1,11 +1,18 @@
-// Approach 1
+// Approach 2
+// Brute force
+// Time : O(n2)
+// Space : O(1)
+
+// Approach 2
 // Using extra Array
 // Time : O(n)
 // Space : O(n)
 
 
-// Approach 2
+// Approach 3
 // Two pointers
+// Time : O(n)
+// Space : O(1)
 
 public static int[] moveZeros(int n, int []a) {
 
@@ -26,5 +33,4 @@ public static int[] moveZeros(int n, int []a) {
       return a;
 }
 
-// Time : O(n)
-// Space : O(1)
+
